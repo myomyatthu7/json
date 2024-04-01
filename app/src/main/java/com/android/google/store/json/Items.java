@@ -55,7 +55,6 @@ public class Items extends AppCompatActivity implements ItemsAdapter.OnItemClick
                     JSONArray jsonArray = response.getJSONArray(KEY_JSONARRAY);
                     for (int i=0;i<jsonArray.length();i++) {
                         JSONObject jsonObject = jsonArray.getJSONObject(i);
-
                         String creator = jsonObject.getString(KEY_CREATOR);
                         String jsonImageUrl = jsonObject.getString(KEY_IMAGEURL);
                         //int likes = jsonObject.getInt(KEY_LIKE);
